@@ -1,0 +1,27 @@
+{
+  "useCases": [
+    {
+      "title": "Cancel recurring subscription",
+      "description": "Request cancellation and refund for an unwanted recurring charge.",
+      "exampleSavings": 29.99
+    },
+    {
+      "title": "Fee waiver for billing error",
+      "description": "Ask a provider to remove an incorrect fee.",
+      "exampleSavings": 12.5
+    },
+    {
+      "title": "Refund for accidental purchase",
+      "description": "Claim a refund for an accidental or duplicate order.",
+      "exampleSavings": 45
+    }
+  ],
+  "drafts": [
+    {
+      "providerName": "Acme Streaming",
+      "subject": "Request to cancel subscription and refund recent charge",
+      "bodyPreview": "Hello — I was billed for a subscription I did not intend to continue. Please cancel the subscription and refund the charge to the original payment method.",
+      "estimatedSavings": 29.99
+    }
+  ]
+}
