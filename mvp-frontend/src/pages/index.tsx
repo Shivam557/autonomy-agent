@@ -13,6 +13,14 @@ const bullets = [
 ];
 
 const Home: NextPage = () => {
+  const testBackend = async () => {
+    const res = await fetch("http://localhost:8000/api/v1/generate-draft", {
+      method: "POST",
+    });
+    const data = await res.json();
+    console.log("Backend response:", data);
+  };
+
   return (
     <main>
       <Hero
@@ -24,13 +32,15 @@ const Home: NextPage = () => {
       />
 
       <section className="container" style={{ padding: "28px 0 80px" }}>
-        {/* Placeholder for below-the-fold content: use-cases, trust, etc. */}
         <div style={{ display: "grid", gap: 16 }}>
           <h2>Use cases</h2>
           <p>
             Examples include subscription cancellations, accidental purchases,
             and billing errors—each with a ready-to-edit draft.
           </p>
+
+          {/* Day 1 test button — temporary */}
+          <button onClick={testBackend}>Test Backend</button>
         </div>
       </section>
     </main>
